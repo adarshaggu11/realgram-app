@@ -1,0 +1,50 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A8FF;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF1493;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A020F0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shapeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" opacity="0.9"/>
+  
+  <!-- House/Location Pin Shape (outer container) -->
+  <path d="M 100 30 L 160 80 L 160 140 Q 160 160 140 160 L 60 160 Q 40 160 40 140 L 40 80 Z" fill="none" stroke="white" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Eye (viewing symbol) -->
+  <g transform="translate(100, 85)">
+    <!-- Eye white -->
+    <ellipse cx="0" cy="0" rx="18" ry="22" fill="white" opacity="0.95"/>
+    <!-- Eye pupil -->
+    <circle cx="0" cy="0" r="12" fill="url(#shapeGradient)"/>
+    <!-- Eye shine -->
+    <circle cx="-4" cy="-5" r="4" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Roof Triangle (house top) -->
+  <path d="M 60 80 L 100 50 L 140 80" stroke="white" stroke-width="2.5" fill="none" opacity="0.7"/>
+  
+  <!-- Windows (small squares for detail) -->
+  <g opacity="0.6">
+    <rect x="65" y="100" width="15" height="15" fill="white"/>
+    <rect x="120" y="100" width="15" height="15" fill="white"/>
+  </g>
+  
+  <!-- Star detail (top-left for sparkle) -->
+  <path d="M 55 45 L 58 52 L 65 52 L 59 57 L 61 64 L 55 59 L 49 64 L 51 57 L 45 52 L 52 52 Z" fill="white" opacity="0.7"/>
+  
+  <!-- House frame icon (top-right) -->
+  <g transform="translate(140, 55)" opacity="0.7">
+    <rect x="-8" y="-8" width="16" height="16" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M -4 0 L 4 0" stroke="white" stroke-width="1.5"/>
+    <path d="M 0 -4 L 0 4" stroke="white" stroke-width="1.5"/>
+  </g>
+</svg>

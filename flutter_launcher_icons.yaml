@@ -1,0 +1,7 @@
+flutter_launcher_icons:
+  image_path: "assets/icons/realgram_logo.svg"
+  
+  android: true
+  ios: true
+  
+  android_adaptive_icon_background: "#0066FF"
