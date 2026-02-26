@@ -797,3 +797,4 @@ class _ReviewCard extends StatelessWidget {
       ),
     );
   }
+}
